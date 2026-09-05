@@ -139,11 +139,17 @@
       </div>
 
       <div class="card">
-        <span class="tag">ANALYTICS · NEXT UP</span>
-        <h3>Pakistan Data-Job-Market Tracker <small style="color:var(--muted);font-weight:600;font-size:13px">— in progress</small></h3>
-        <p>Weekly-scraped job postings → skills &amp; salary-trend warehouse → public dashboard answering
-        “what do Pakistani employers actually ask data candidates in 2026?” Recruiters shape this data;</p>
-        <p class="stack"><b>Stack:</b> Python · dbt · DuckDB · Streamlit — <a href="https://github.com/Bilalkhank10">watch my GitHub</a></p>
+        <span class="tag">MARKET ANALYTICS · WEEKLY PIPELINE</span>
+        <img class="thumb" src="radar_skills.png" alt="skill demand chart"/>
+        <h3><a href="https://github.com/Bilalkhank10/data-job-market-radar">Data Job Market Radar</a></h3>
+        <p>Four public job-board APIs scraped every Monday → an append-snapshot DuckDB warehouse → dbt
+        marts that quantify skill demand, salary bands, and posting lifecycles → a five-tab dashboard.
+        Week-1 result: SQL is in 63% of postings, Python 53%, and GenAI/LLM skills already 22%.</p>
+        <div class="metrics">
+          <span class="metric">📡 4 live sources</span><span class="metric">🧠 51-skill taxonomy</span>
+          <span class="metric">✅ 25 tests</span><span class="metric">⏱ weekly CI</span>
+        </div>
+        <p class="stack"><b>Stack:</b> Python · DuckDB · dbt Core · Streamlit · GitHub Actions</p>
       </div>
 
     </div>
