@@ -3,8 +3,15 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Umer Iqbal — Data Analyst & Analytics Engineer</title>
-<meta name="description" content="Portfolio of Umer Iqbal — Data Analyst & Analytics Engineer from Islamabad, Pakistan. SQL, Python, dbt, DuckDB, Power BI, Streamlit."/>
+<title>Bilal Khan — Data Analyst & Analytics Engineer</title>
+<link rel="icon" href="avatar.jpg" type="image/jpeg"/>
+<link rel="canonical" href="https://bilalkhank10.github.io/"/>
+<meta property="og:title" content="Bilal Khan | Data Analytics &amp; Analytics Engineering"/>
+<meta property="og:description" content="Python and SQL projects: data cleaning, analytics pipelines, dbt models, and dashboards."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://bilalkhank10.github.io/"/>
+<meta property="og:image" content="https://bilalkhank10.github.io/banner.png"/>
+<meta name="description" content="Portfolio of Bilal Khan — Data Analyst & Analytics Engineer from Pakistan. SQL, Python, dbt, DuckDB, Power BI, Streamlit."/>
 <style>
   :root{
     --bg:#0d1117; --panel:#161b22; --panel2:#1c2330; --line:#2b333d;
@@ -12,7 +19,10 @@
     --radius:16px;
   }
   *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
+  html{scroll-behavior:smooth;scroll-padding-top:90px}
+  :focus-visible{outline:2px solid var(--green);outline-offset:5px}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.btn{transition:none}}
+  @media(max-width:520px){nav .wrap{height:auto;min-height:58px;flex-wrap:wrap;gap:10px;padding-top:12px;padding-bottom:12px}nav a.navlink{margin-left:0;margin-right:12px;font-size:12px}.banner{height:auto}.card{padding:18px}.facts div{flex-wrap:wrap}}
   body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',Inter,-apple-system,Arial,sans-serif;line-height:1.65}
   a{color:var(--green);text-decoration:none}
   .wrap{max-width:1000px;margin:0 auto;padding:0 22px}
@@ -27,7 +37,7 @@
   .banner{width:100%;height:230px;object-fit:cover;border-radius:var(--radius);border:1px solid var(--line);margin-top:34px;display:block}
 
   .hero{padding:30px 0 10px}
-  .hero h1{font-size:40px;line-height:1.15;letter-spacing:-.5px}
+  .hero h1{font-size:clamp(28px,5vw,40px);line-height:1.15;letter-spacing:-.5px}
   .hero h1 em{color:var(--green);font-style:normal}
   .hero p.role{font-size:17px;color:var(--muted);margin:10px 0 22px;max-width:640px}
   .badges{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:24px}
@@ -75,7 +85,7 @@
 <body>
 
 <nav><div class="wrap">
-  <div class="brand">umer<span>.iqbal</span></div>
+  <div class="brand">bilal<span>.khan</span></div>
   <div>
     <a class="navlink" href="#projects">Projects</a>
     <a class="navlink" href="#skills">Skills</a>
@@ -89,13 +99,13 @@
   <img class="banner" src="banner.png" alt="data banner"/>
 
   <div class="hero">
-    <h1>Hi, I'm <em>Umer Iqbal</em> —<br/>I turn raw data into <em>data products</em>.</h1>
-    <p class="role">Data Analyst &amp; Analytics Engineer from Islamabad, Pakistan.
+    <h1>Hi, I'm <em>Bilal Khan</em> —<br/>I turn raw data into <em>data products</em>.</h1>
+    <p class="role">Data Analyst &amp; Analytics Engineer from Pakistan.
     I build extraction pipelines, dbt-modeled warehouses, automated data-quality tests,
     and dashboards people actually read — end to end.</p>
     <div class="badges">
-      <span class="badge">SQL</span><span class="badge">Python</span><span class="badge">dbt Core</span>
-      <span class="badge">DuckDB</span><span class="badge">Streamlit</span><span class="badge">Power BI</span>
+      <span class="badge">SQL / PostgreSQL</span><span class="badge">Python</span><span class="badge">dbt Core</span>
+      <span class="badge">DuckDB</span><span class="badge">Streamlit</span><span class="badge">Pandas</span>
       <span class="badge">TypeScript</span><span class="badge">GitHub Actions</span>
     </div>
     <div class="cta">
@@ -106,7 +116,7 @@
 
   <section id="projects">
     <h2>Featured Projects</h2>
-    <p class="subtitle">Real data, real engineering — each project runs end-to-end with tests and CI.</p>
+    <p class="subtitle">Analytics projects with source code, modeling decisions, and reproducible workflows.</p>
     <div class="proj">
 
       <div class="card">
@@ -115,24 +125,24 @@
         <h3><a href="https://github.com/Bilalkhank10/psx-data-warehouse">PSX Analytics — Pakistan Stock Exchange Data Warehouse</a></h3>
         <p>Fault-tolerant Python extractor pulls 24,600+ daily price records for 20 PSX large-caps plus
         USD/PKR and SBP policy rates into DuckDB. A dbt layer ships facts &amp; dimensions — including a
-        Type-2 slowly-changing dimension and ASOF currency joins — guarded by 41 automated tests and
+        Type-2 slowly-changing dimension and ASOF currency joins — guarded by automated data-quality tests and
         freshness SLAs. A five-tab Streamlit dashboard serves the insights, refreshed daily by GitHub Actions.</p>
         <div class="metrics">
           <span class="metric">📦 24.6k rows</span><span class="metric">🧱 8 dbt models</span>
-          <span class="metric">✅ 41 tests</span><span class="metric">🕰 SCD2</span>
+          <span class="metric">✅ dbt tests</span><span class="metric">🕰 SCD2</span>
           <span class="metric">⏱ daily CI</span>
         </div>
         <p class="stack"><b>Stack:</b> Python · yfinance · DuckDB · dbt Core · Streamlit · Plotly · GitHub Actions · Parquet</p>
       </div>
 
       <div class="card">
-        <span class="tag">DATA PRODUCT · WEB-SCALE EXTRACTION</span>
+        <span class="tag">DATA PRODUCT · MARKET RESEARCH</span>
         <h3><a href="https://github.com/Bilalkhank10/my-data-analysis-project">GigCraft — Fiverr Market-Research Studio</a></h3>
         <p>Types a niche, crawls the public Fiverr market, computes real keyword &amp; market intelligence
         from the crawled sample, and drafts complete, compliance-checked gig packages with an AI layer —
         three architectures (Express web app, FastAPI growth system, standalone MCP server) in one monorepo.</p>
         <div class="metrics">
-          <span class="metric">🌐 web-scale crawling</span><span class="metric">📊 keyword analytics</span>
+          <span class="metric">🌐 public gig sampling</span><span class="metric">📊 keyword analytics</span>
           <span class="metric">🤖 AI drafting</span>
         </div>
         <p class="stack"><b>Stack:</b> TypeScript · Express · Python FastAPI · SQLite · Gemini API</p>
@@ -144,7 +154,7 @@
         <h3><a href="https://github.com/Bilalkhank10/data-job-market-radar">Data Job Market Radar</a></h3>
         <p>Four public job-board APIs scraped every Monday → an append-snapshot DuckDB warehouse → dbt
         marts that quantify skill demand, salary bands, and posting lifecycles → a five-tab dashboard.
-        Week-1 result: SQL is in 63% of postings, Python 53%, and GenAI/LLM skills already 22%.</p>
+        The analysis reports observed demand in the collected sample; results depend on collection date and board coverage.</p>
         <div class="metrics">
           <span class="metric">📡 4 live sources</span><span class="metric">🧠 51-skill taxonomy</span>
           <span class="metric">✅ 25 tests</span><span class="metric">⏱ weekly CI</span>
@@ -177,7 +187,7 @@
       <div class="skill">Python<small>pandas · pipelines</small></div>
       <div class="skill">dbt Core<small>marts · tests · snapshots</small></div>
       <div class="skill">DuckDB<small>local warehouse</small></div>
-      <div class="skill">Power BI<small>DAX · reporting</small></div>
+      <div class="skill">Pandas / NumPy<small>cleaning · analysis</small></div>
       <div class="skill">Streamlit<small>data apps</small></div>
       <div class="skill">Excel<small>analysis · modeling</small></div>
       <div class="skill">Git / Actions<small>versioning · CI/CD</small></div>
@@ -193,13 +203,13 @@
       <p style="font-size:15.5px">
         I'm a data analyst &amp; analytics engineer who likes owning the whole pipeline:
         extract → load → model → test → serve. My flagship project is a full data warehouse for the
-        Pakistan Stock Exchange — live extraction, dbt models with SCD2 history, 41 automated data
+        Pakistan Stock Exchange — live extraction, dbt models with SCD2 history, automated data-quality
         tests, and a dashboard. I also build data-powered tools (see GigCraft).<br/><br/>
-        Right now I'm sharpening dimensional modeling, Power BI DAX, and semantic layers —
+        Right now I'm sharpening dimensional modeling, PostgreSQL, dimensional modeling, and data quality —
         and looking for <b>Data Analyst</b> / <b>Analytics Engineer</b> opportunities.
       </p>
       <div class="facts">
-        <div><span>📍 Location</span><span>Islamabad, Pakistan</span></div>
+        <div><span>📍 Location</span><span>Pakistan</span></div>
         <div><span>💼 Focus</span><span>DA / Analytics Engineering</span></div>
         <div><span>🧰 Core</span><span>SQL · Python · dbt</span></div>
         <div><span>🌐 GitHub</span><span><a href="https://github.com/Bilalkhank10">Bilalkhank10</a></span></div>
@@ -212,7 +222,7 @@
 
 <footer>
   <div class="wrap">
-    Built by <b>Umer Iqbal</b> ·
+    Built by <b>Bilal Khan</b> ·
     <a href="https://github.com/Bilalkhank10">GitHub</a>
     <a href="https://github.com/Bilalkhank10/psx-data-warehouse">PSX Project</a>
     <a href="https://github.com/Bilalkhank10/Bilalkhank10.github.io">Site source</a>
